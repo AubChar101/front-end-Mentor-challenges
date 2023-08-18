@@ -1,0 +1,330 @@
+/*Header*/
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --pr-Light-red: hsl(0, 100%, 67%);
+  --pr-Orangey-yellow: hsl(39, 100%, 56%);
+  --pr-Green-teal: hsl(166, 100%, 37%);
+  --pr-Cobalt-blue: hsl(234, 85%, 45%);
+
+  --pr-Light-red-hover: hsla(0, 100%, 67%, 0.1);
+  --pr-Orangey-yellow--hover: hsla(39, 100%, 56%, 0.1);
+  --pr-Green-teal-hover: hsla(166, 100%, 37%, 0.1);
+  --pr-Cobalt-blue-hover: hsla(234, 85%, 45%, 0.1);
+
+  --gr-Light-slate-blue: hsl(252, 100%, 67%);
+  --gr-Light-royal-blue: hsl(241, 81%, 54%);
+  --gr-Violet-blue: hsla(256, 72%, 46%, 1);
+  --gr-Persian-blue: hsla(241, 72%, 46%, 0);
+
+  --nt-White: hsl(0, 0%, 100%);
+  --nt-Pale-blue: hsl(221, 100%, 96%);
+  --nt-Light-lavender: hsl(241, 100%, 89%);
+  --nt-Dark-gray-blue: hsl(224, 30%, 27%);
+
+  --p-size: 18px;
+}
+
+/*Text*/
+.text_top {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--nt-Light-lavender);
+}
+.card_details .text_top {
+  color: var(--nt-Dark-gray-blue);
+}
+.text_point {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--nt-White);
+  margin: 0px;
+}
+.c_r_message h2 {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--nt-White);
+  margin: 0px;
+}
+.c_r_message p {
+  width: 180px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 200;
+  color: var(--nt-Light-lavender);
+  text-align: center;
+}
+.point span {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--nt-Light-lavender);
+}
+/*Body*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--nt-White);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+
+/*Card Result*/
+
+.card_result {
+  width: 50%;
+  max-width: 270px;
+  min-width: 230px;
+  height: 100%;
+  padding: 2.8rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    0deg,
+    var(--gr-Light-royal-blue),
+    var(--gr-Light-slate-blue)
+  );
+  border-radius: 2rem;
+}
+.point-container {
+  margin: 2rem 0rem;
+  padding: 2rem 2.8rem;
+  background: linear-gradient(
+    to bottom,
+    var(--gr-Violet-blue),
+    var(--gr-Persian-blue)
+  );
+  border-radius: 100%;
+}
+.point {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.c_r_message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/*Card Details*/
+
+.card_details {
+  width: 50%;
+  max-width: 270px;
+  min-width: 230px;
+  height: 100%;
+  margin-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.details_list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+}
+/*Detail*/
+
+.details_list li {
+  width: 100%;
+  padding: 0.82rem 0.5rem;
+  margin: 0.25rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details_list li .value {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.details_list li .value span {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(128, 128, 128, 0.788);
+}
+
+.detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail img {
+  margin-right: 0.7rem;
+}
+
+.detail .text_detail {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+/*Button Continue*/
+
+.button_container {
+  width: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_details button {
+  width: 90%;
+  padding: 1rem;
+  margin-top: 0.3rem;
+  border: none;
+  outline: none;
+  background-color: var(--nt-Dark-gray-blue);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.text_button {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--nt-White);
+}
+
+/*Transitions*/
+
+.card_details button:hover {
+  background: linear-gradient(
+    0deg,
+    var(--gr-Light-royal-blue),
+    var(--gr-Light-slate-blue)
+  );
+}
+.details_list li:nth-child(1):hover {
+  background-color: var(--pr-Light-red-hover);
+  border-radius: 0.5rem;
+}
+.details_list li:nth-child(2):hover {
+  background-color: var(--pr-Orangey-yellow--hover);
+  border-radius: 0.5rem;
+}
+.details_list li:nth-child(3):hover {
+  background-color: var(--pr-Green-teal-hover);
+  border-radius: 0.5rem;
+}
+.details_list li:nth-child(4):hover {
+  background-color: var(--pr-Cobalt-blue-hover);
+  border-radius: 0.5rem;
+}
+
+.attribution {
+  width: 100%;
+  position: relative;
+  bottom: -410px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 200;
+  color: var(--nt-Light-lavender);
+  text-align: center;
+}
+
+/*tablet and mobile*/
+
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  main {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    position: absolute;
+    top: 0px;
+  }
+  .card_result {
+    width: 100vw;
+    height: 45%;
+    max-width: none;
+    min-width: none;
+    padding: 1.5rem 1.7rem;
+    border-radius: 0rem 0rem 3rem 3rem;
+  }
+  .point-container {
+    margin: 1.5rem 0rem 1rem;
+  }
+  .c_r_message p {
+    width: 90%;
+  }
+
+  /*Card Details*/
+
+  .card_details {
+    width: 85%;
+    height: 50%;
+    max-width: none;
+    min-width: none;
+    margin-left: 0px;
+    gap: 0rem;
+  }
+
+  .card_details .text_top {
+    padding-bottom: 0.5rem;
+  }
+
+  .details_list {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+
+  .details_list li {
+    width: 100%;
+    padding: 1rem 0.2rem;
+    margin: 0.5rem 0rem;
+  }
+
+  .button_container {
+    width: 100%;
+  }
+
+  .card_details button {
+    width: 90%;
+  }
+}
