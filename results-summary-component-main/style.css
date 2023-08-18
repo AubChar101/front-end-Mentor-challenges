@@ -21,8 +21,6 @@
   --nt-Pale-blue: hsl(221, 100%, 96%);
   --nt-Light-lavender: hsl(241, 100%, 89%);
   --nt-Dark-gray-blue: hsl(224, 30%, 27%);
-
-  --p-size: 18px;
 }
 
 /*Text*/
@@ -250,12 +248,11 @@ main {
 
 .attribution {
   width: 100%;
-  position: relative;
-  bottom: -410px;
+  position: absolute;
+  bottom: 0px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin: 1rem;
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 0.9rem;
   font-weight: 200;
@@ -326,5 +323,11 @@ main {
 
   .card_details button {
     width: 90%;
+  }
+  .attribution {
+    width: 100%;
+    position: relative;
+    bottom: -410px;
+    margin: 1rem;
   }
 }

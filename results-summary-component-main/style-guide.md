@@ -4,8 +4,7 @@
 
 The designs were created to the following widths:
 
-- Mobile: 375px
-- Desktop: 1440px
+- Tablet: 600px
 
 ## Colors
 
@@ -16,6 +15,13 @@ The designs were created to the following widths:
 - Green teal: hsl(166, 100%, 37%)
 - Cobalt blue: hsl(234, 85%, 45%)
 
+### Hover Effects
+
+- Light-red-hover: hsla(0, 100%, 67%, 0.1);
+- Orangey-yellow--hover: hsla(39, 100%, 56%, 0.1);
+- Green-teal-hover: hsla(166, 100%, 37%, 0.1);
+- Cobalt-blue-hover: hsla(234, 85%, 45%, 0.1);
+
 ## Gradients
 
 - Light slate blue (background): hsl(252, 100%, 67%)
@@ -23,8 +29,6 @@ The designs were created to the following widths:
 
 - Violet blue (circle): hsla(256, 72%, 46%, 1)
 - Persian blue (circle): hsla(241, 72%, 46%, 0)
-
-
 
 ### Neutral
 
@@ -41,7 +45,11 @@ Use transparency to get the colour variations necessary to match the design. Hin
 
 ### Body Copy
 
-- Font size (paragraphs): 18px
+- Font size (Text_top): 1.25rem
+- Font size (point): 3.5rem
+- Font size (point span): 0.9rem
+- Font size (message Great): 1.65rem
+- Font size (description): 0.9rem
 
 ### Font
 
