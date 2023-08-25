@@ -23,41 +23,58 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 #### Home
 
 - Desktop
-  ![](./screenshots/home_desktop.jpg)
+
+  <img src="./screenshots/home_desktop.jpg" style="width:500px"></img>
+
 - tablet
-  ![](./screenshots/home_tablet.png)
+
+  <img src="./screenshots/home_tablet.png" style="width:500px"></img>
+
 - mobile
-  ![](./screenshots/home_mobile.png)
+
+  <img src="./screenshots/home_mobile.png" style="width:500px"></img>
 
 #### destination
 
 - Desktop
-  ![](./screenshots/destination_desktop.jpg)
+
+  <img src="./screenshots/destination_desktop.jpg" style="width:500px"></img>
+
 - tablet
-  ![](./screenshots/destination_tablet.jpg)
-  ![](./screenshots/destination_tablet2.jpg)
+
+  <img src="./screenshots/destination_tablet.jpg" style="width:500px"></img> <img src="./screenshots/destination_tablet2.jpg" style="width:500px"></img>
+
 - mobile
-  ![](./screenshots/destination_mobile.png)
+
+  <img src="./screenshots/destination_mobile.png" style="width:500px"></img>
 
 #### crew
 
 - Desktop
-  ![](./screenshots/crew_desktop.jpg)
+
+  <img src="./screenshots/crew_desktop.jpg" style="width:500px"></img>
+
 - tablet
-  ![](./screenshots/crew_tablet.jpg)
+
+  <img src="./screenshots/crew_tablet.jpg" style="width:500px"></img>
+
 - mobile
-  ![](./screenshots/crew_mobile.png)
+
+  <img src="./screenshots/crew_mobile.png" style="width:500px"></img>
 
 #### technology
 
 - Desktop
-  ![](./screenshots/technology_desktop.jpg)
+
+  <img src="./screenshots/technology_desktop.jpg" style="width:500px"></img>
+
 - tablet
-  ![](./screenshots/technology_tablet.jpg)
-  ![](./screenshots/technology_tablet2.jpg)
+
+  <img src="./screenshots/technology_tablet.jpg" style="width:500px"></img> <img src="./screenshots/technology_tablet2.jpg" style="width:500px"></img>
+
 - mobile
-  ![](./screenshots/technology_mobile.png)
-  ![](./screenshots/technology_mobile2.png)
+
+  <img src="./screenshots/technology_mobile.png" style="width:500px"></img> <img src="./screenshots/technology_mobile2.png" style="width:500px"></img> |
 
 ## My process
 
