@@ -1,0 +1,330 @@
+/*
+Global Styles
+*/
+
+body {
+  background-image: url(../../assets/crew/background-crew-desktop.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--white);
+}
+
+/*
+Rewrite Classes
+*/
+
+.crew .text .paragraph {
+  max-width: none;
+  margin-top: 1rem;
+}
+
+/*
+Layouts
+*/
+
+main.crew {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.crew article {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.crew article section.text_container,
+section.figure_container {
+  width: 40%;
+  height: 100%;
+}
+
+/*section text_container*/
+
+.crew article section.text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: var(--light);
+}
+
+.crew section.text_container .sub-title-container {
+  height: 10%;
+}
+
+.crew section.text_container .text {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/*
+Reusable styles
+*/
+
+/*Text*/
+.crew .sub-title {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.crew .sub-title::before {
+  content: "02";
+  margin-right: 1rem;
+  font-family: var(--ff-Barlow-Condensed);
+  font-weight: 200;
+  color: var(--light);
+}
+
+.crew .name {
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+}
+
+.crew .job_title {
+  font-family: var(--ff-Bellefair);
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--light);
+}
+
+/*
+Components
+*/
+
+/*Navigator*/
+
+.crew .text_container .navigator_container {
+  width: 30%;
+  min-width: 130px;
+  height: 10%;
+  padding: 1.5rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crew .text_container button.navigator {
+  border: none;
+  outline: none;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: var(--light);
+  border-radius: 100%;
+  opacity: 0.5;
+}
+
+.crew .text_container button.current-navigator {
+  opacity: 1;
+  background-color: var(--white);
+}
+
+/*section text_container*/
+
+.crew section.figure_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.crew section.figure_container img {
+  width: 70%;
+  min-width: 500px;
+}
+
+/*
+Media Queries
+*/
+
+@media (max-width: 950px) {
+  .crew article section.text_container,
+  section.figure_container {
+    width: 50%;
+  }
+  .crew article section.text_container {
+    padding: 0rem 0rem 0rem 5rem;
+  }
+  .crew section.figure_container img {
+    width: 70%;
+    min-width: 400px;
+  }
+}
+
+/*Table*/
+
+@media (max-width: 767px) {
+  /*
+Global Styles
+*/
+
+  body.crew {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/crew/background-crew-tablet.jpg);
+  }
+
+  /*
+Rewrite Classes
+*/
+
+  .crew .text .paragraph {
+    margin-top: 0.5rem;
+  }
+
+  /*
+Layouts
+*/
+
+  main.crew {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .crew article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .crew article section.text_container,
+  section.figure_container {
+    width: 100%;
+    height: 50%;
+  }
+
+  /*section text_container*/
+
+  .crew article section.text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+  }
+
+  .crew article section.text_container {
+    padding: 0rem;
+  }
+
+  .crew section.text_container .sub-title-container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    margin-left: 5rem;
+    padding: 1rem 0rem 5.5rem;
+    justify-content: flex-start;
+  }
+
+  .crew section.text_container .text {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*
+Reusable styles
+*/
+
+  /*Text*/
+
+  .crew .name {
+    font-size: 3rem;
+  }
+
+  .crew .job_title,
+  .name,
+  .sub-title {
+    text-align: center;
+  }
+
+  .crew section.figure_container img {
+    width: 50%;
+    min-width: none;
+    max-width: 200px;
+  }
+}
+
+/*Mobile*/
+
+@media (max-width: 480px) {
+  /*
+Rewrite Classes
+*/
+
+  .crew .text .paragraph {
+    max-width: none;
+    font-size: 1rem;
+  }
+
+  /*
+Reusable styles
+*/
+
+  /*Text*/
+
+  .crew .job_title {
+    font-size: 1.5rem;
+  }
+
+  .crew .name {
+    font-size: 2.3rem;
+  }
+  .crew .job_title,
+  .name,
+  .sub-title {
+    text-align: center;
+  }
+
+  .crew section.figure_container img {
+    width: 50%;
+    min-width: none;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 375px) {
+  /*
+Rewrite Classes
+*/
+
+  .crew .text .paragraph {
+    max-width: none;
+    font-size: 0.8rem;
+  }
+  /*
+Reusable styles
+*/
+
+  /*Text*/
+
+  .crew .job_title {
+    font-size: 1rem;
+  }
+
+  .crew .name {
+    font-size: 1.7rem;
+  }
+  .crew .job_title,
+  .name,
+  .sub-title {
+    text-align: center;
+  }
+}

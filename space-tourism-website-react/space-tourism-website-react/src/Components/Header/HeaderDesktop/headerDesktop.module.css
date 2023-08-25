@@ -1,0 +1,136 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white);
+}
+
+.Logo {
+  padding: 2.5rem;
+}
+
+hr.line {
+  width: 40%;
+  opacity: 0.4;
+  transform: translateX(25px);
+  z-index: 10;
+}
+/*NavBar*/
+
+.nav {
+  position: relative;
+  width: 60%;
+  height: 30%;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 3.5px 0rem 0rem 3.5px;
+}
+
+.glass {
+  background: radial-gradient(
+    rgba(255, 255, 255, 0.1) 40%,
+    rgba(255, 255, 255, 0.01)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.034);
+}
+
+/*Links*/
+
+.Link_container {
+  position: relative;
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0rem;
+}
+
+.a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: var(--ff-Barlow-Condensed);
+  font-size: 1rem;
+  color: var(--white);
+  letter-spacing: 1.5px;
+}
+
+.a::before {
+  content: attr(value);
+  font-family: var(--ff-Barlow-Condensed);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-right: 0.3rem;
+  letter-spacing: 2px;
+}
+
+.currentLink::after {
+  content: " ";
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 3.5px;
+  background-color: var(--white);
+  border-radius: 0.25rem;
+}
+
+/*media queries*/
+
+@media (max-width: 920px) {
+  .line {
+    width: 30%;
+    transform: translateX(20px);
+  }
+  .nav {
+    width: 80%;
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+/*tablet*/
+
+@media (max-width: 767px) {
+  .header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+  }
+
+  .line {
+    display: none;
+  }
+  .nav {
+    width: 80%;
+    padding: 0rem 0rem;
+  }
+  .a {
+    font-size: 0.9rem;
+    letter-spacing: 1.25px;
+  }
+  .a::before {
+    font-size: 0.9rem;
+    margin-right: 0.3rem;
+    letter-spacing: 1.3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    display: none;
+  }
+}

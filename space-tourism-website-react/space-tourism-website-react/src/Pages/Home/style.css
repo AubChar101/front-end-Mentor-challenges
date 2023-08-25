@@ -1,0 +1,147 @@
+body.home {
+  overflow-y: visible !important;
+  background-image: url(../../assets/home/background-home-desktop.jpg) !important;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main.home {
+  width: 100%;
+  height: 100%;
+}
+
+.home article {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.home article section {
+  width: 40%;
+  height: 100%;
+}
+
+/*Section Text*/
+
+.home article section.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--light);
+}
+
+/*Section Figure Circle*/
+
+.home section.figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .figure .circle {
+  width: 250px;
+  height: 250px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 100%;
+  transform: translateY(50px);
+  cursor: pointer;
+}
+
+.home .figure .circle {
+  font-family: var(--ff-Bellefair);
+  font-size: 2rem;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  transition-delay: 5s;
+}
+
+.home .Desktop-header {
+  display: none;
+}
+
+/*Transitions*/
+
+.home .figure .circle:hover::after {
+  content: "  ";
+  position: absolute;
+  width: 130%;
+  height: 130%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+  z-index: -10;
+}
+
+/*Media Queries*/
+
+@media (max-width: 1090px) {
+  .home .figure .circle {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 950px) {
+  .home .figure .circle {
+    width: 150px;
+    height: 150px;
+    font-size: 1.5rem;
+  }
+}
+
+/*Tablet*/
+
+@media (max-width: 767px) {
+  body.home {
+    background-image: url(../../assets/home/background-home-tablet.jpg);
+  }
+  .home article {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home article section {
+    width: 100%;
+    height: 40%;
+  }
+  .home article section.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+  }
+}
+
+/*Smartphone*/
+
+@media (max-width: 480px) {
+  body.home {
+    background-image: url(../../assets/home/background-home-mobile.jpg);
+  }
+  .home article section {
+    width: 100%;
+    height: 50%;
+  }
+  .home article section.home .figure {
+    height: 30%;
+  }
+  .home .figure .circle {
+    width: 100px;
+    height: 100px;
+    font-size: 1rem;
+  }
+}

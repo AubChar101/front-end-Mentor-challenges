@@ -1,0 +1,106 @@
+/*Header*/
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Barlow:wght@400;500&family=Bellefair&display=swap");
+
+:root {
+  --dark: hsl(230 35% 7%);
+  --light: hsl(231 77% 90%);
+  --white: hsl(0 0% 100%);
+
+  --ff-Barlow: "Barlow", sans-serif;
+  --ff-Barlow-Condensed: "Barlow Condensed", sans-serif;
+  --ff-Bellefair: "Bellefair", serif;
+
+  --tablet-max-width: 767px;
+  --smartphone-max-width: 480px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+/*Text*/
+
+.title {
+  padding: 1rem 0rem;
+  font-family: var(--ff-Bellefair);
+  font-size: 8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: var(--white);
+}
+
+.sub-title {
+  font-family: var(--ff-Barlow-Condensed);
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  transform: translateX(-10px);
+}
+
+.paragraph {
+  width: 100%;
+  max-width: 500px;
+  font-family: var(--ff-Barlow);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: white;
+}
+
+/*media queries*/
+
+@media (max-width: 950px) {
+  .title {
+    font-size: 6rem;
+  }
+  .sub-title {
+    font-size: 1.5rem;
+  }
+  .paragraph {
+    font-size: 0.9rem;
+  }
+}
+
+/*Tablet*/
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 7.5rem;
+  }
+  .sub-title {
+    font-size: 1.5rem;
+  }
+  .paragraph {
+    width: 370px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+/*Smartphone*/
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 5rem;
+  }
+  .sub-title {
+    font-size: 1.3rem;
+  }
+  .paragraph {
+    width: 90%;
+    max-width: 350px;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
