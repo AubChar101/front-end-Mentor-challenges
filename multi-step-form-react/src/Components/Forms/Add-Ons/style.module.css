@@ -1,0 +1,253 @@
+/*
+Layouts Styles
+*/
+
+.main__container {
+  width: 70%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__top {
+  width: 100%;
+  height: 90%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.main__container header {
+  width: 80%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.forms__container {
+  position: relative;
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.buttons__container {
+  width: 80%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*
+  Components
+  */
+
+/* Option Section Style */
+
+.option__container {
+  width: 90%;
+  height: 10%;
+  padding: 1.5rem 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid var(--Light-gray);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.option__container__checked {
+  border-color: var(--Pastel-blue);
+  background-color: var(--Light-blue);
+}
+
+/* Option Left */
+
+.option__left__container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Checkbox */
+
+.option__checkbox__container {
+  position: relative;
+  padding-right: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option__checkbox__container input {
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2.5px solid var(--Light-gray);
+  border-radius: 0.3rem;
+}
+
+.option__checkbox__container input:checked {
+  background-color: var(--Purplish-blue);
+  border-color: var(--Purplish-blue);
+}
+
+.option__checkbox__container .checkmark {
+  position: absolute;
+  width: 1rem;
+}
+
+/* GoBack Button */
+
+button.goBack__Button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button.goBack__Button {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--Cool-gray);
+}
+
+/* Next Step */
+
+button.Next_button {
+  padding: 0.8rem 1rem;
+  border: none;
+  outline: none;
+  background-color: var(--Marine-blue);
+  border-radius: 0.5rem;
+}
+
+button.Next_button {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--White);
+}
+
+button.Next_button:hover {
+  background-color: hsl(243, 100%, 62%);
+}
+
+button.Next_button__disabled {
+  opacity: 0.8;
+}
+
+/* 
+Media Query
+ */
+
+@media (max-width: 950px) {
+  /* Modify Classes Style */
+
+  .main__container .text_medium__small {
+    font-size: 1rem;
+  }
+
+  .main__container .text_small__small {
+    font-size: 0.8rem;
+  }
+
+  /*
+  Layout
+  */
+
+  /*
+  Components
+  */
+
+  /* Option Section Style */
+
+  .option__container {
+    width: 90%;
+    height: 10%;
+    padding: 1.4rem 5%;
+  }
+
+  /* Option Left */
+
+  .option__left__container {
+    width: 75%;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 767px) {
+  /*
+Layouts Styles
+*/
+
+  .main__container {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .section__top {
+    width: 95%;
+    height: 90%;
+    padding: 0.9rem 0rem;
+    gap: 1rem;
+  }
+
+  .section__top {
+    background-color: var(--White);
+    border-radius: 1rem;
+  }
+
+  .main__container header {
+    width: 90%;
+  }
+
+  .forms__container {
+    position: relative;
+    width: 90%;
+    height: 50%;
+  }
+
+  .Next_button__container {
+    width: 90%;
+    height: 10%;
+  }
+
+  /*
+  Components
+  */
+
+  /* Option Section Style */
+
+  .option__container {
+    width: 90%;
+    height: 10%;
+    padding: 1.4rem 5%;
+  }
+
+  /* Option Left */
+
+  .option__left__container {
+    width: 75%;
+  }
+}
